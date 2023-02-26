@@ -2,42 +2,42 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema(
   {
-    firstName: { 
+    firstName: {
       type: String,
       required: true,
       min: 2,
-      max: 50
+      max: 50,
     },
-    lastName: { 
+    lastName: {
       type: String,
       required: true,
       min: 2,
-      max: 50
+      max: 50,
     },
-    email: { 
+    email: {
       type: String,
       required: true,
       max: 50,
-      unique: true
+      unique: true,
     },
-    password: { 
+    password: {
       type: String,
       required: true,
       min: 5,
     },
-    picturePath: { 
+    picturePath: {
       type: String,
       default: "",
     },
-    friends: { 
+    friends: {
       type: Array,
       default: [],
     },
     location: String,
     occupation: String,
-    viewedProfileNumber: Number,
-    impressions: Number
-  },   
+    viewedProfile: Number,
+    impressions: Number,
+  },
   { timestamps: true }
 );
 
