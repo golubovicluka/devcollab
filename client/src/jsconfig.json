@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "src"
-  },
-  // Had to add empty ts file to satisfy complier and vite
-  "include": ["src", "../file.ts"]
-}
