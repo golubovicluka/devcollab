@@ -1,2 +1,5 @@
-<p>feed works!</p>
-<button type="button" class="btn btn-primary">Bootstrap btn</button>
+<app-navigation></app-navigation>
+<app-user-widget></app-user-widget>
+<div *ngFor="let post of posts;let index = index;trackBy: trackByPost">
+  <app-post [createdBy]="post.createdBy" [title]="post.title" [createdAt]="post.createdAt" [message]="post.message" [likes]="post.likes"></app-post>
+</div> 

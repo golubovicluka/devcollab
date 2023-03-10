@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
+  @Input('likes') likes!: number;
+  @Input('message') message!: string;
+  @Input('createdAt') createdAt!: string;
+  @Input('createdBy') createdBy!: string;
+  @Input('title') title!: string;
 
 }
