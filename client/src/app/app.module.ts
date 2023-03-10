@@ -17,9 +17,10 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BrowserAnimationsModule,
     TooltipModule.forRoot(),
     ModalModule.forRoot()
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
